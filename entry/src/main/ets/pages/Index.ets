@@ -65,6 +65,13 @@ struct Index {
         .onClick(() => {
           router.pushUrl({ url: 'pages/LinkTest' })
         })
+
+        Button('ProvideConsume')
+          .margin({ top: 40 })
+          .height(44)
+          .onClick(()=>{
+            router.pushUrl({ url: 'pages/ProvideConsumeTest' })
+          })
       }
       .width('100%')
     }

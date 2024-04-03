@@ -4,6 +4,7 @@
     "pages/Second",
     "pages/StatusTest",
     "pages/PropTest",
-    "pages/LinkTest"
+    "pages/LinkTest",
+    "pages/ProvideConsumeTest"
   ]
 }

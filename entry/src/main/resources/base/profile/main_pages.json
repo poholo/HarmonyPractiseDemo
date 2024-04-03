@@ -3,6 +3,7 @@
     "pages/Index",
     "pages/Second",
     "pages/StatusTest",
-    "pages/PropTest"
+    "pages/PropTest",
+    "pages/LinkTest"
   ]
 }

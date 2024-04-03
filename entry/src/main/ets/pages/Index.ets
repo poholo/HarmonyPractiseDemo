@@ -55,6 +55,16 @@ struct Index {
             console.log(`push prop error ${err.code}`)
           })
         })
+
+        Button() {
+          Text('Link Test')
+        }
+        .margin({ top: 40 })
+        .width('100%')
+        .height(40)
+        .onClick(() => {
+          router.pushUrl({ url: 'pages/LinkTest' })
+        })
       }
       .width('100%')
     }

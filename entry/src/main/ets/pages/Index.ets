@@ -1,8 +1,10 @@
 import router from '@ohos.router'
+
+
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World'
+  @State message: string = '----------'
 
   build() {
     Row() {
@@ -71,6 +73,34 @@ struct Index {
           .height(44)
           .onClick(()=>{
             router.pushUrl({ url: 'pages/ProvideConsumeTest' })
+          })
+
+        Button('Observed/ObjectLink')
+          .margin({ top: 40 })
+          .height(44)
+          .onClick(() => {
+            router.pushUrl({ url: 'pages/ObservedObjectLinkTest' })
+          })
+
+        Button('LocalStorageLink')
+          .margin({ top: 40 })
+          .height(44)
+          .onClick(()=>{
+            router.pushUrl({ url: 'pages/LocalStorageLinkTest'})
+          })
+
+        Button('LocalStorageProp')
+          .margin({ top: 40 })
+          .height(44)
+          .onClick(() => {
+            router.pushUrl({ url: 'pages/LocalStoragePropTest' })
+          })
+
+        Button('AppStorage')
+          .margin({ top: 40 })
+          .height(44)
+          .onClick(()=>{
+            router.pushUrl({ url: 'pages/AppStorageTest' })
           })
       }
       .width('100%')

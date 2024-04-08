@@ -5,6 +5,10 @@
     "pages/StatusTest",
     "pages/PropTest",
     "pages/LinkTest",
-    "pages/ProvideConsumeTest"
+    "pages/ProvideConsumeTest",
+    "pages/ObservedObjectLinkTest",
+    "pages/LocalStorageLinkTest",
+    "pages/LocalStoragePropTest",
+    "pages/AppStorageTest"
   ]
 }

@@ -7,7 +7,7 @@ struct Index {
   @State message: string = '----------'
 
   build() {
-    Row() {
+    Scroll() {
       Column() {
         Text(this.message)
           .fontSize(50)

@@ -58,12 +58,12 @@ struct PropChild {
   @Prop count: number
   build() {
     Column() {
-      Text(`Child2 count ${this.count}}`)
+      Text(`Child2 count ${this.count}`)
         .fontColor(Color.Orange)
         .width('100%')
         .height(40)
       Button() {
-        Text(`Child2 count ${this.count}}`)
+        Text(`Child2 count ${this.count}`)
       }
       .width(200)
       .height(40)

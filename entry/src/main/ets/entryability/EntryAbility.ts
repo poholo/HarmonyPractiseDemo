@@ -2,10 +2,22 @@ import UIAbility from '@ohos.app.ability.UIAbility';
 import hilog from '@ohos.hilog';
 import window from '@ohos.window';
 
+const TAG: string = '[Example].[Entry].[EntryAbility]'
+
 export default class EntryAbility extends UIAbility {
   storage: LocalStorage = new LocalStorage({ 'PropA': 49})
   onCreate(want, launchParam) {
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onCreate');
+    globalThis.entryAbilityWant = want
+    let eventHub = this.context.eventHub
+    eventHub.on('event1', this.func1)
+    // eventHub.on('event1', (....data) => {
+    //   console.info(TAG, '2.' + JSON.stringify(data))
+    // })
+  }
+
+  func1(...data) {
+    console.info(TAG, '1.' + JSON.stringify(data))
   }
 
   onDestroy() {
@@ -39,4 +51,9 @@ export default class EntryAbility extends UIAbility {
     // Ability has back to background
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onBackground');
   }
+
+  onNewWant() {
+
+  }
+
 }

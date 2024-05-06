@@ -1,7 +1,7 @@
 
 // let storage = new LocalStorage({ 'PropA': 100 })
 
-let storage = LocalStorage.GetShared()
+let storage1 = LocalStorage.GetShared()
 
 @Component
 struct PageA {
@@ -14,7 +14,7 @@ struct PageA {
   }
 }
 
-@Entry(storage)
+@Entry(storage1)
 @Component
 struct PageB {
   @LocalStorageProp('PropA') a: number = 2

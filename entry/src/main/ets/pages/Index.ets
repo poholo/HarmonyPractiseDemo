@@ -1,4 +1,5 @@
 import router from '@ohos.router'
+import common from '@ohos.app.ability.common'
 
 
 @Entry
@@ -6,8 +7,17 @@ import router from '@ohos.router'
 struct Index {
   @State message: string = '----------'
 
+  private context = getContext(this) as common.UIAbilityContext
+
+  eventHubFunc() {
+    let want = globalThis.entryAbilityWant
+    this.context.eventHub.emit('HHHHAAAAA')
+    this.context.eventHub.emit('event1')
+    this.context.eventHub.emit('event1', 1)
+  }
+
   build() {
-    Row() {
+    Scroll() {
       Column() {
         Text(this.message)
           .fontSize(50)
@@ -101,6 +111,13 @@ struct Index {
           .height(44)
           .onClick(()=>{
             router.pushUrl({ url: 'pages/AppStorageTest' })
+          })
+        Button('eventHub')
+          .margin({ top: 40 })
+          .height(44)
+          .onClick(() => {
+            this.eventHubFunc()
+            console.log('.....test.....')
           })
       }
       .width('100%')

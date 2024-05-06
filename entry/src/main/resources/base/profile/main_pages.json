@@ -9,6 +9,7 @@
     "pages/ObservedObjectLinkTest",
     "pages/LocalStorageLinkTest",
     "pages/LocalStoragePropTest",
-    "pages/AppStorageTest"
+    "pages/AppStorageTest",
+    "pages/ForEachTest"
   ]
 }

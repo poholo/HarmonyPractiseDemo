@@ -20,3 +20,7 @@ struct AppStorageTest {
     }
   }
 }
+
+// PersistentStorage.PersistProp('aProp', 47) 47
+// AppStorage.Get('aProp') 47
+// @StorageLink('aProp') aProp: number = 48

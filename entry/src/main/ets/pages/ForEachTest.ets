@@ -1,5 +1,7 @@
 
-// @Entry
+import hilog from '@ohos.hilog'
+
+@Entry
 @Component
 
 struct ForEachTest {
@@ -14,6 +16,7 @@ struct ForEachTest {
         .onClick(() => {
           this.simpleArr[1] = 'testChange'
           console.log(this.simpleArr[1])
+          hilog.info(0x0000, '%{public}s', this.simpleArr[1])
         })
 
       Text(`${ this.simpleArr[1] }`)

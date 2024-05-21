@@ -10,6 +10,7 @@
     "pages/LocalStorageLinkTest",
     "pages/LocalStoragePropTest",
     "pages/AppStorageTest",
-    "pages/ForEachTest"
+    "pages/ForEachTest",
+    "pages/Layout/LinearLayout"
   ]
 }

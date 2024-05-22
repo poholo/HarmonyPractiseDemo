@@ -30,7 +30,7 @@ struct VerticalLayout {
       Row().width('90%').height(50).backgroundColor(0xF5DEB3)
     }
     .width('100%')
-    .alignItems(HorizontalAlign.Center)
+    .alignItems(HorizontalAlign.Start)
     .backgroundColor(Color.Gray)
   }
 }
@@ -78,9 +78,9 @@ struct VerticalJustifyLayout {
 struct AjustContentLayout {
   build() {
     Row() {
-      Column().layoutWeight(1).height('100%').backgroundColor(Color.Orange)
-      Column().layoutWeight(2).height('100%').backgroundColor(Color.Red)
       Column().layoutWeight(4).height('100%').backgroundColor(Color.Orange)
+      Column().layoutWeight(1).height('100%').backgroundColor(Color.Red)
+      Column().layoutWeight(8).height('100%').backgroundColor(Color.Orange)
     }
     .height(200)
     .backgroundColor(0xF5DEB3)

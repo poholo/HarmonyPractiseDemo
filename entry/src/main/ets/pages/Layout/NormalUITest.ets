@@ -103,6 +103,29 @@ struct NormalUITest {
 
         }
 
+        //Text Span
+        Column() {
+          Text('some Text')
+          Text('text ') {
+            Span('I am span')
+              .decoration({ type: TextDecorationType.Underline, color: Color.Red })
+
+          }
+
+          Text('') {
+            Span('I am Span 2')
+              .fontSize(20)
+              .decoration({ type: TextDecorationType.Overline, color: Color.Green })
+          }
+          .margin({ top: 15 })
+
+          Text('') {
+            Span('I am Span 3')
+              .fontSize(20)
+              .decoration({ type: TextDecorationType.LineThrough, color: Color.Pink })
+          }
+
+        }
 
       }
     }

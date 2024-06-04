@@ -119,6 +119,13 @@ struct Index {
             this.eventHubFunc()
             console.log('.....test.....')
           })
+
+        Button('VideoTest')
+          .margin({ top: 40 })
+          .height(44)
+          .onClick(()=>{
+            router.pushUrl({ url: 'pages/Layout/VideoTest'})
+          })
       }
       .width('100%')
     }

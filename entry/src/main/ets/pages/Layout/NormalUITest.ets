@@ -125,9 +125,38 @@ struct NormalUITest {
               .decoration({ type: TextDecorationType.LineThrough, color: Color.Pink })
           }
 
+          Text("可以直接点击Xcode顶部的运行按钮，选择测试目标，或使用快捷键Command + U运行所有测试。")
+            .width(300)
+            .maxLines(2)
+            .maxFontSize(30)
+            .minFontSize(5)
+            .border({ width: 1})
+            .copyOption(CopyOptions.InApp)
+
+          TextArea({
+            text: "",
+            placeholder: "提示文本"
+          })
+          TextInput({
+            placeholder: ".....",
+            text: ""
+          })
+
+          TextInput({
+            placeholder: "xxx",
+            text: "~~"
+          })
+            .type(InputType.Password)
+            .backgroundColor(Color.Pink)
+
+
+
         }
 
       }
+      .margin({
+        bottom: 50
+      })
     }
 
   }

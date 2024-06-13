@@ -12,6 +12,7 @@
     "pages/AppStorageTest",
     "pages/ForEachTest",
     "pages/Layout/LinearLayout",
-    "pages/Layout/VideoTest"
+    "pages/Layout/VideoTest",
+    "pages/Navigation/NavigationTest"
   ]
 }

@@ -13,6 +13,12 @@
     "pages/ForEachTest",
     "pages/Layout/LinearLayout",
     "pages/Layout/VideoTest",
-    "pages/Navigation/NavigationTest"
+    "pages/Navigation/NavigationTest",
+    "pages/Animation/SharedTranstionDest",
+    "pages/Animation/SharedTranstionTest",
+    "pages/Animation/PageTransationPushTest",
+    "pages/Animation/PageTransationPushDest",
+    "pages/Animation/PageTransationDest2",
+    "pages/Animation/PageTransationSrc2"
   ]
 }
